@@ -13,12 +13,14 @@
 
 ## Project Structure
 
+```plaintext
 ├── pages          # Page files
 ├── components     # React component files
 ├── lib            # Non-react modules
 ├── public         # Static files for images
 ├── styles         # Stylesheets using vanilla.js
 └── stories        # Storybook stories for components
+```
 
 ## LICENSE
 
