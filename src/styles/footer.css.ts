@@ -12,7 +12,7 @@ export const footerLink = style({
     color: '#E0E2E5',
     textDecoration: 'none',
     transition: 'border-bottom 0.3s ease', 
-    borderBottom: '2px solid transparent', // Línea inicialmente transparente
+    borderBottom: '2px solid transparent',
     ':hover': {
       borderBottom: '2px solid #F48245',
     },

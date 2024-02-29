@@ -1,5 +1,10 @@
 import { style } from '@vanilla-extract/css';
 
+export const mainContainer = style({
+  position: 'relative',
+  minHeight: '100vh',
+});
+
 export const main = style({
   padding: '2rem',
   textAlign: 'center',

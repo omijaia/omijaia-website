@@ -1,6 +1,4 @@
-// button.css.ts
 import { style } from '@vanilla-extract/css';
-import { workContainer, workSquare } from './work.css';
 
 export const buttonStyle = style({
   color: '#E0E2E5',
@@ -49,4 +47,9 @@ export const emptySquare = style({
   border: '2px dashed #393939',
   backgroundColor: 'transparent',
   margin: '10px',
+});
+
+
+export const aboutAndBlogButton = style({
+    marginTop: '50px', 
 });

@@ -1,4 +1,3 @@
-// header.tsx
 import React from 'react';
 import { logo } from '../styles/header.css';
 

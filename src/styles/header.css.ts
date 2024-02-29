@@ -5,7 +5,7 @@ const spinFast = keyframes({
     transform: 'rotate(0deg)',
   },
   '100%': {
-    transform: 'rotate(2555deg)',  // Ajusta la cantidad de grados para cambiar la velocidad
+    transform: 'rotate(2555deg)', 
   },
 });
 
