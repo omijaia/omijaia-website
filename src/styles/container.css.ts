@@ -1,45 +1,67 @@
+/* container.css.ts */
+
 import { style } from '@vanilla-extract/css';
 
 export const mainContainer = style({
   display: 'flex',
   flexDirection: 'row',
-  alignItems: 'flex-start',
-  justifyContent: 'space-between',
-  padding: '20px',
-  boxSizing: 'border-box',
+  padding: '23px',
+  height: '100%',
 });
 
 export const leftContainer = style({
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'center',
-  width: '100px',
+  alignItems: 'flex-start',
+  height: '100%', 
+  textAlign: 'center',
 });
 
 export const rightContainer = style({
-  flex: 1,
-  marginLeft: '20px',
+  marginLeft: '15px',
   display: 'flex',
   flexDirection: 'column',
+  width: '100%',
 });
 
 export const logo = style({
-  width: '100%',
+  width: '100px',
   height: 'auto',
   marginBottom: '10px',
 });
 
-export const roundedButton = style({
-  backgroundColor: '#3498db',
-  borderRadius: '10px',
+export const roundedLeftButton = style({
+  backgroundColor: '#2D302F',
+  borderRadius: '13px',
   padding: '10px',
   margin: '5px 0',
-  color: '#fff',
+  color: '#DFE1E5',
   width: '100%',
-  boxSizing: 'border-box',
+  flex: 1,
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center', // Centra verticalmente
+  justifyContent: 'center', // Centra horizontalmente
+  fontWeight: 'bold',
+  fontSize: '1.1rem',
+});
+
+export const roundedRightButton = style({
+  backgroundColor: '#2D302F',
+  borderRadius: '13px',
+  padding: '10px',
+  margin: '5px 0',
+  color: '#DFE1E5',
+  width: '100%',
+  flex: 1,
+  display: 'flex',
+  flexDirection: 'column',
+  fontWeight: 'bold',
+  fontSize: '1rem',
 });
 
 export const copyright = style({
   marginTop: 'auto',
-  color: '#000',
+  fontSize: '0.8rem',
+  color: '#DFE1E5',
 });
