@@ -2,7 +2,7 @@ import { style } from '@vanilla-extract/css';
 
 export const mainContainer = style({
   position: 'relative',
-  minHeight: '100vh',
+  minHeight: '80vh',
 });
 
 export const main = style({
@@ -11,12 +11,12 @@ export const main = style({
   flexDirection: 'column',
   justifyContent: 'space-between',
   alignItems: 'center',
-  minHeight: '100vh',
+  minHeight: '80vh',
   borderRadius: '33px',
-  backgroundImage: 'linear-gradient(rgba(28, 31, 34, 0.95), rgba(28, 31, 34, 0.95), rgba(28, 31, 34, 0.95), rgba(28, 31, 34, 0.95), rgba(62, 64, 66, 0.95))',
+  backgroundColor: '#242724',
   color: '#E0E2E5',
-  marginBottom: '10%',
-  marginTop: '3%',
+  marginBottom: '5%',
+  marginTop: '5%',
   marginLeft: '23%',
   marginRight: '23%',
 });

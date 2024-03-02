@@ -1,50 +1,21 @@
-'use client'
-import React, { useState } from 'react';
-import Header from '../components/Header';
-import Button from '../components/Button';
-import { main, mobileStyles, mainContainer } from '../styles/main.css';
-import { footer, footerLink, footerText } from '../styles/footer.css';
+import React from 'react';
+import { mainContainer, leftContainer, rightContainer, logo, roundedButton, copyright } from '../styles/container.css';
 
-
-const Home = () => {
-  const isMobile = true;
-  const [activeButtons, setActiveButtons] = useState<string[]>([]);
-
-  const handleButtonClick = (buttonId: string) => {
-    setActiveButtons((prevButtons) => {
-      if (prevButtons.includes(buttonId)) {
-        return prevButtons.filter((id) => id !== buttonId);
-      } else {
-        return [...prevButtons, buttonId];
-      }
-    });
-  };
-
-  const buttonVariants = {
-    visible: { opacity: 1, y: 0 },
-    hidden: { opacity: 0, y: -20 },
-  };
-
+const Page = () => {
   return (
-    <div className={`${mainContainer} main-container`}>
-      <div className={`${main} ${isMobile ? mobileStyles : ''}`}>
-        <Header />
-        <Button activeButtons={activeButtons} handleButtonClick={handleButtonClick} />
-  
-        {/* Footer */}
-        <div className={footer}>
-          <p className={footerText}>
-            <a href="https://omijaia.com" className={footerLink} target="_blank" rel="noopener noreferrer">
-              Omijaia
-            </a>{' '}
-            @ 2024
-          </p>
-        </div>
+    <div className={mainContainer}>
+      <div className={leftContainer}>
+        <img className={logo} src="/assets/images/omijaia.png" alt="Omijaia Logo" />
+        <div className={roundedButton}>About</div>
+        <div className={roundedButton}>Get In Touch</div>
+        <div className={copyright}>Omijaia &#169; 2024</div>
+      </div>
+      <div className={rightContainer}>
+        <div className={roundedButton}>Works</div>
+        <div className={roundedButton}>Development Process</div>
       </div>
     </div>
   );
 };
 
-export default Home;
-
-
+export default Page;

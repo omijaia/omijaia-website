@@ -1,6 +1,6 @@
 {
   "name": "omijaia",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,8 +11,10 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@popmotion/popcorn": "^0.4.4",
     "framer-motion": "^11.0.6",
     "next": "14.1.0",
+    "popmotion": "^11.0.5",
     "react": "^18",
     "react-dom": "^18",
     "react-parallax": "^3.5.1"

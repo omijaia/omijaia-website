@@ -5,16 +5,16 @@ const spinFast = keyframes({
     transform: 'rotate(0deg)',
   },
   '100%': {
-    transform: 'rotate(2555deg)', 
+    transform: 'rotate(5555deg)', 
   },
 });
 
 const spinSlow = keyframes({
   '0%': {
-    transform: 'rotate(2555deg)',
+    transform: 'rotate(5555deg)',
   },
   '100%': {
-    transform: 'rotate(0deg)',
+    transform: 'rotate(360deg)',
   },
 });
 
