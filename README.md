@@ -1,4 +1,4 @@
-# Omijaia - Homepage
+# Omijaia - Website
 
 - **Works:** Featuring a collection of projects and works.
 - **About Me:** Providing information about the developer, their skills, hobbies, and background.
