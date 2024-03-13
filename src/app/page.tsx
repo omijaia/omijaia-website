@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import React, { useState } from 'react';
 import { container, 
          header, 
@@ -45,8 +46,8 @@ const Page = () => {
       )}FOR GET <br />
           YOUR WEBSITE</h1>
         <div className={imagesContainer}>
-          <img src="/assets/images/smartphone.png" alt="Imagen 1" className={smartphone} />
-          <img src="/assets/images/notebook.png" alt="Imagen 2" className={notebook} />
+          <Image src="/assets/images/smartphone.png" alt="Imagen 1" className={smartphone} />
+          <Image src="/assets/images/notebook.png" alt="Imagen 2" className={notebook} />
         </div>
       </div>
       <div className={doit}>
