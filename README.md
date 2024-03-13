@@ -14,7 +14,7 @@
 - [Framer Motion](https://www.framer.com/motion/) - A React animation library.
 
 ## LICENSE
-**MIT License**
+- [MIT LICENSE](https://github.com/omijaia/omijaia-website/blob/develop/LICENSE)
 
 You are free to create your own homepage for free by forking this project under the following conditions:
 
