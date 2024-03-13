@@ -1,22 +1,24 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import StyledJsxRegistry from './registry'
+
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "➤ Web & Software Development & Visual Identity • Omijaia",
-  description: "Simplify, Innovate, Thrive: Your Digital Solutions Partner."
-};
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>
+        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <title>Web & Software Development & Visual Identity • Omijaia</title>
+      </head>
+      <body>
+        <StyledJsxRegistry>{children}</StyledJsxRegistry>      </body>
     </html>
   );
 }
