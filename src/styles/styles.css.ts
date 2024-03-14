@@ -78,15 +78,25 @@ export const imagesContainer = style({
 });
   
 export const smartphone = style({
-    maxWidth: '30%', 
+    maxWidth: '17%', 
     height: 'auto', 
     margin: '10px',
+    '@media': {
+        '(min-width: 768px)': {
+            maxWidth: '30%', 
+        },
+    },
 });
 
 export const notebook = style({
-    maxWidth: '50%', 
+    maxWidth: '33%', 
     height: 'auto', 
     margin: '10px',
+    '@media': {
+        '(min-width: 768px)': {
+            maxWidth: '50%', 
+        },
+    },
 });
 
 export const button = style({

@@ -158,3 +158,35 @@ a {
   z-index: 9998;
 }
 
+.whatsapp-button-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.whatsapp-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.notification {
+  position: absolute;
+  top: -5px; 
+  right: -10px; 
+  width: 20px;
+  height: 20px; 
+  background-color: #E32D2D; 
+  border-radius: 50%;
+  color: #6AA5DB;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+

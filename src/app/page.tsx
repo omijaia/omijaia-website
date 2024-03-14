@@ -19,6 +19,7 @@ import Notebook from '../../public/assets/images/notebook.png';
 import DevProcess from './components/DevProcess';
 import WorkList from './components/WorkList';
 import AnimatedText from './components/AnimatedText';
+import AnimatedNotification from './components/AnimatedNotification';
 
 
 
@@ -45,18 +46,19 @@ const Page = () => {
             <button onClick={togglePopup}>Close</button>
           </div>
         </div>
-      )}FOR GET <br />
+      )}FOR CLAIM <br />
           YOUR WEBSITE</h1>
         <div className={imagesContainer}>
-          <Image src={Smartphone} alt="Smartphone mockup" className={smartphone} style={{ width: '100%', height: '100%' }}  />
-          <Image src={Notebook} alt="Notebook mockup" className={notebook} style={{ width: '100%', height: '100%' }} />
+          <Image src={Smartphone} alt="Smartphone mockup" className={smartphone} style={{ maxWidth: '30%', height: 'auto' }}  />
+          <Image src={Notebook} alt="Notebook mockup" className={notebook} style={{ maxWidth: '50%', height: 'auto%' }} />
         </div>
       </div>
       <div className={doit}>
       <AnimatedText />
       </div>
       <div className={main}>
-        whatsapp button with a popup notifcation emoji for engagment
+      <AnimatedNotification />
+        <br/>
         <h1>Development Process</h1>
         <DevProcess />
         <h1>Works</h1>
