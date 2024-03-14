@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { motion, useAnimation, useScroll } from 'framer-motion';
 import { container, 
          header, 
          hero, 
@@ -22,50 +23,68 @@ import AnimatedText from './components/AnimatedText';
 import AnimatedNotification from './components/AnimatedNotification';
 
 
-
 const Page = () => {
-  
+  const controls = useAnimation();
+  const doitControls = useAnimation();
+  const mainControls = useAnimation();
+  const buttonControls = useAnimation();
   const [isOpen, setIsOpen] = useState(false);
+
+  const spring = {
+    type: 'spring',
+    damping: 15,
+    stiffness: 100,
+  };
+
+  useEffect(() => {
+    controls.start({ opacity: 1, y: 0, transition: spring });
+    buttonControls.start({ opacity: 1, scale: 1, transition: spring });
+  }, []); 
 
   const togglePopup = () => {
     setIsOpen(!isOpen);
-  };
+  }
+ 
 
   return (
     <div className={container}>
       <div className={hero}>
-        <div className={header}>
+        <motion.div className={header} initial={{ opacity: 0, y: -50 }} animate={controls}>
           <Image src={Omijaia} className={logo} alt="Logo Omijaia" style={{ width: '50px', height: '50px' }} />
           <div className={slogan}>This is a rat race, but I'm no rat, I'm a turtle, ninja turtle. So what's your favorite? Mine is Michaelangelo.</div>
-        </div>
-        <h1 className={title}>THE BUTTON <br />
-          <button className={button} onClick={togglePopup}></button>{isOpen && (
-        <div className="overlay">
-          <div className="popup">
-            <h2>Formulario</h2>
-            <button onClick={togglePopup}>Close</button>
-          </div>
-        </div>
-      )}FOR CLAIM <br />
-          YOUR WEBSITE</h1>
+        </motion.div>
+
+        <motion.h1 className={title} initial={{ opacity: 0, y: 50 }} animate={controls}>
+          THE BUTTON <br />
+          <button className={button} onClick={togglePopup}></button>
+          {isOpen && (
+            <div className="overlay">
+              <div className="popup">
+                <h2>Formulario</h2>
+                <button onClick={togglePopup}>Close</button>
+              </div>
+            </div>
+          )}FOR CLAIM <br />
+          YOUR WEBSITE
+        </motion.h1>
+
         <div className={imagesContainer}>
           <Image src={Smartphone} alt="Smartphone mockup" className={smartphone} style={{ maxWidth: '30%', height: 'auto' }}  />
           <Image src={Notebook} alt="Notebook mockup" className={notebook} style={{ maxWidth: '50%', height: 'auto%' }} />
         </div>
       </div>
+      
       <div className={doit}>
-      <AnimatedText />
+        <AnimatedText />
       </div>
+
       <div className={main}>
-      <AnimatedNotification />
+        <AnimatedNotification />
         <br/>
         <h1>Development Process</h1>
         <DevProcess />
         <h1>Works</h1>
         <WorkList />
-        icono github
-
-        about y post with framermotion shared layout
       </div>
     </div>
   );
