@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { WorkData } from "./types";
+import Image from "next/image";
 
 const Work: React.FC<WorkData> = ({
   title,
@@ -20,7 +21,7 @@ const Work: React.FC<WorkData> = ({
       <h2>{title}</h2>
       {showDetails && (
         <>
-          <img src={imageUrl} alt={title} />
+          <img src={imageUrl} alt={title} style={{ width: '100%' }} />
           <p>{description}</p>
           <br/>
           <span className="category-label">{category.join(", ")}</span>          

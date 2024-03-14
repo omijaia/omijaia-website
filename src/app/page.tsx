@@ -13,7 +13,9 @@ import { container,
          button, 
          main, 
          doit } from '../styles/styles.css';
-import Omijaia from '../../public/assets/images/omijaia.png';
+import Omijaia from '../../public/assets/images/omijaia.svg';
+import Smartphone from '../../public/assets/images/smartphone.png';
+import Notebook from '../../public/assets/images/notebook.png';
 import DevProcess from './components/DevProcess';
 import WorkList from './components/WorkList';
 import AnimatedText from './components/AnimatedText';
@@ -32,7 +34,7 @@ const Page = () => {
     <div className={container}>
       <div className={hero}>
         <div className={header}>
-          <img src={Omijaia.src} className={logo} alt="Logo Omijaia" style={{ width: '33px' }} />
+          <Image src={Omijaia} className={logo} alt="Logo Omijaia" style={{ width: '50px', height: '50px' }} />
           <div className={slogan}>This is a rat race, but I'm no rat, I'm a turtle, ninja turtle. So what's your favorite? Mine is Michaelangelo.</div>
         </div>
         <h1 className={title}>THE BUTTON <br />
@@ -46,8 +48,8 @@ const Page = () => {
       )}FOR GET <br />
           YOUR WEBSITE</h1>
         <div className={imagesContainer}>
-          <Image src="/assets/images/smartphone.png" alt="Imagen 1" className={smartphone} />
-          <Image src="/assets/images/notebook.png" alt="Imagen 2" className={notebook} />
+          <Image src={Smartphone} alt="Smartphone mockup" className={smartphone} style={{ width: '100%', height: '100%' }}  />
+          <Image src={Notebook} alt="Notebook mockup" className={notebook} style={{ width: '100%', height: '100%' }} />
         </div>
       </div>
       <div className={doit}>

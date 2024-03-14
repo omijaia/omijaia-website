@@ -6,5 +6,6 @@ export interface WorkData {
     technologies: string[];
     url: string;
     imageUrl: string;
+    showDetails: boolean;
   }
   

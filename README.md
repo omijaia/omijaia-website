@@ -1,9 +1,9 @@
 # Omijaia - Website
 
 - **Works:** Featuring a collection of projects and works.
-- **About Me:** Providing information about the developer, their skills, hobbies, and background.
 - **Development Process:** A comprehensive overview of the development process for client projects.
 - **Get In Touch:** Reach out to discuss potential collaborations or for any inquiries.
+- **About Me:** Providing information about the developer, their skills, hobbies, and background.
 - **Blog:** A platform for sharing insights, thoughts, and experiences related to hobbies and technology.
 
 ## Main Technologies

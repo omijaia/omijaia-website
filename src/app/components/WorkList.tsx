@@ -16,6 +16,7 @@ const WorkList: React.FC = () => {
       technologies: ["React", "Vite", "Tailwind", "Frame motion", "Paypal", "Calendly"],
       url: "https://www.tremunda.com/",
       imageUrl: "/assets/images/works/tremunda.png",
+      showDetails: false,
     },
   ];
 
