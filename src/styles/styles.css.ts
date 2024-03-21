@@ -13,13 +13,6 @@ const mobileButtonSize = '45px';
   export const navLinks = style({
     display: 'flex',
     flexDirection: 'column',
-    marginTop: '-10px',
-
-    '@media': {
-      '(min-width: 768px)': {
-        marginTop: '10px',
-      },
-    }
   });
 
   export const navLink = style({
