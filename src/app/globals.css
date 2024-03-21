@@ -1,147 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-title: Inter, sans-serif;
-  --font-p: Poppins, sans-serif;
-}
-
-p {
-  font-family: var(--font-p);
-  color: #F4F4ED;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-title);
-  color: #F4F4ED;
-}
-
-
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+:root {
+    --color-base: #201E1B;
+    --color-border: #DDD;
+    --color-success: #80B912;
+    --color-error: #F05230;
+    --color-warning: #F7B500;
+}
+
 html,
 body {
-  position: relative;
-  height: 100vh;
-  margin: 0;
-  overflow: auto;
-  background: #201e1b;
-  background-repeat: no-repeat;
-  padding: 0;
-  margin: 0;
+  background-color: #F4F4ED;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  min-height: 100vh;
+  font-family: Arial, Verdana, sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Noto Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji !important;
   scrollbar-width: thin;
   scrollbar-color: #888 #F4F4ED;
 }
 
+p {
+  color: #201E1B;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #201E1B;
+}
+
 a {
-  color: inherit;
   text-decoration: none;
+  color: #201E1B;
+  font-size: 11px;
 }
 
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.rotate {
-  animation: rotate 20s cubic-bezier(0.6, 0.04, 0.98, 0.335) infinite;
-}
-
-.work-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.work-item {
-  background-color: #201E1B;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 20px;
-  width: 300px;
-  border: 1px solid #F4F4ED;
-}
-
-.work-item img {
+/*_______NAVBAR_______*/
+.main_nav {
+  padding-top: .75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: .75rem;
+  position: fixed;
+  top: 0;
   width: 100%;
-  border-radius: 10px;
+  z-index: 1000;
+  background-color: rgba(244, 244, 237, 0.7); 
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
-.work-item h2 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-
-h1 {
-  text-align: center;
-}
-
-a {
-  color: #F48245;
-}
-
-.category-label {
-  color: #F4F4ED;
-  border-radius: 4px;
-  font-size: 0.8em;
-  margin-right: 5px;
-}
-
-@keyframes fade-in-down {
-  from {
-    opacity: 0;
-    transform: translateY(-50px); 
+@media(max-width: 770px) {
+  .main_nav {
+      grid-column-gap:0;
+      grid-row-gap: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .main_nav>div:nth-child(2) {
+      grid-column: 1/span 2;
+      grid-row: 2;
+      width: 100%;
   }
 }
 
-@keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(50px); 
+@media(min-width: 771px) {
+  .main_nav {
+      grid-column-gap:0;
+      grid-row-gap: 0;
+      display: grid;
+      grid-template-columns: 1fr minmax(200px,900px) 1fr;
+      grid-template-rows: 1fr;
+      height: 10%;
+
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
-.fade-in-down {
-  animation: fade-in-down 1s ease forwards; 
-}
-
-.fade-in-up {
-  animation: fade-in-up 1s ease forwards;
-}
-
+/*_______RED BUTTON POP-UP_______*/
 .popup {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  background-color: #F4F4ED;
   padding: 20px;
   z-index: 9999;
   border-radius: 8px;
@@ -158,10 +106,14 @@ a {
   z-index: 9998;
 }
 
+
+/*_______WHATSAPP BUTTON_______*/
 .whatsapp-button-container {
   display: flex;
   justify-content: center; 
   align-items: center; 
+  margin-right: 10px;
+  margin-bottom: 33px;
 }
 
 .whatsapp-button {
@@ -175,15 +127,27 @@ a {
   position: absolute;
   top: -5px; 
   right: -10px; 
-  width: 20px;
-  height: 20px; 
+  width: 16px;
+  height: 16px; 
   background-color: #E32D2D; 
   border-radius: 50%;
-  color: #6AA5DB;
-  font-size: 12px;
+  color: #F4F4ED;
+  font-size: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+@media(min-width: 950px) {
+  .container {
+      margin-left:auto;
+      margin-right: auto;
+      max-width: 900px
+  }
+}
 
+menu, ol, li, ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}

@@ -1,148 +1,242 @@
 import { style } from '@vanilla-extract/css';
 
-
 const mobileFontSize = '39px';
 const desktopFontSize = '100px';
 const mobileButtonSize = '45px';
 
-export const container = style({
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  minHeight: '100vh',
-});
+//______________________NAVBAR
+  export const logo = style({
+    justifyContent: 'flex-start',
+    marginRight: '3vmin',
+  });
 
-
-export const header = style({
+  export const navLinks = style({
     display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: '20px',
-    width: '100%',
-    position: 'relative',
-    top: 0,
+    flexDirection: 'column',
+    marginTop: '-10px',
 
     '@media': {
-        '(min-width: 768px)': {
-            position: 'relative', 
-        },
-    },
-});
+      '(min-width: 768px)': {
+        marginTop: '10px',
+      },
+    }
+  });
 
-export const logo = style({
-    margin: '20px',
+  export const navLink = style({
+    cursor: 'pointer', 
+    transition: 'font-style 0.2s', 
+    
+    ':hover': {
+      textDecoration: 'underline', 
+    },
+
+    ':active': {
+      fontWeight: 'bold',
+      textDecoration: 'underline', 
+    },
   });
   
-  
-export const slogan = style({
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'flex-end',
-    fontSize: '13px',
-    flexGrow: 1,
-    fontFamily: 'Poppins, sans-serif',
-    fontStyle: 'italic',
-    color: '#F4F4ED',
-});
+  export const animatedNotification = style({
+    marginLeft: 'auto', 
+  });
+
+
+//______________________HERO
+
 
 export const hero = style({
   display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-});
+  flexDirection: 'row',
+  justifyContent: 'flex-end', 
+  alignItems: 'right', 
+  marginLeft: 'auto',
+  paddingRight: '18px',
+  marginTop: '8rem',
 
-export const title = style({
-    textAlign: 'center', 
-    marginBottom: '20px',
-    fontFamily: 'Inter, sans-serif',
-    letterSpacing: '-3px',
-    fontSize: mobileFontSize, 
-
-    '@media': {
-        '(min-width: 768px)': {
-            letterSpacing: '-8px',
-            fontSize: desktopFontSize, 
-        },
+  '@media': {
+    '(min-width: 768px)': {
+      paddingRight: '25vmin'
     },
-});
+  },
 
-  
-export const imagesContainer = style({
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'row',
-    marginBottom: '20px',
-});
-  
-export const smartphone = style({
-    maxWidth: '17%', 
-    height: 'auto', 
-    margin: '10px',
-    '@media': {
-        '(min-width: 768px)': {
-            maxWidth: '30%', 
-        },
-    },
-});
-
-export const notebook = style({
-    maxWidth: '33%', 
-    height: 'auto', 
-    margin: '10px',
-    '@media': {
-        '(min-width: 768px)': {
-            maxWidth: '50%', 
-        },
-    },
 });
 
 export const button = style({
-    width: mobileButtonSize,
-    height: mobileButtonSize,
-    borderRadius: '50%',
-    border: '3px solid brown',
-    background: `radial-gradient(circle, #CE1A10, #7A1414)`,
-    boxShadow: '#565856 3px 3px 0 0',
-    marginRight: '10px',
-    marginTop: '-10px',
-    cursor: 'pointer',
-    touchAction: 'manipulation',
-    transition: 'box-shadow 0.1s, transform 0.1s',
-    textDecoration: 'none',
-    userSelect: 'none',
-  
-    ':active': {
-        boxShadow: '#422800 2px 2px 0 0',
-        transform: 'translate(2px, 2px)',
+  width: mobileButtonSize,
+  height: mobileButtonSize,
+  borderRadius: '50%',
+  border: '3px solid brown',
+  background: `radial-gradient(circle, #CE1A10, #7A1414)`,
+  boxShadow: '#565856 3px 3px 0 0',
+  cursor: 'pointer',
+  touchAction: 'manipulation',
+  transition: 'box-shadow 0.1s, transform 0.1s, background-color 0.3s',
+  textDecoration: 'none',
+  userSelect: 'none',
+  ':active': {
+    boxShadow: '#422800 2px 2px 0 0',
+    transform: 'translate(2px, 2px)',
+  },
+  ':hover': {
+    background: `radial-gradient(circle, #CE1A10, #7A1414), linear-gradient(45deg, rgba(255,255,255,0.5), rgba(255,255,255,0))`,
+  },
+  '@media': {
+    '(min-width: 768px)': {
+      width: '55px',
+      height: '55px',
     },
-
-    '@media': {
-        '(min-width: 768px)': {
-            width: '100px',
-            height: '100px',
-        },
-    },
-    
+  },
 });
 
-export const main = style({
-    flex: '1',
-    padding: '20px',
-    width: '100%',
-    overflowY: 'auto',
-  });
+export const buttonText = style({
+  marginRight: '10px',
+  marginTop: '15px',
+  fontSize: '13px',
+  fontStyle: 'italic',
 
-  export const doit = style({
-    flex: '1',
-    padding: '20px',
-    width: '90%',
-
-    '@media': {
-        '(min-width: 768px)': {
-            width: '73%',
-        },
+  '@media': {
+    '(min-width: 768px)': {
+        marginTop: '17px',
     },
-  });
+  },
+});
+
+export const title = style({
+  textAlign: 'center',
+  marginBottom: '20px',
+  fontFamily: 'Inter, sans-serif',
+  letterSpacing: '-3px',
+  fontSize: mobileFontSize,
+  '@media': {
+    '(min-width: 768px)': {
+      letterSpacing: '-8px',
+      fontSize: desktopFontSize,
+    },
+  },
+});
+
+//______________________IMAGES
+export const imagesContainer = style({
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  flexDirection: 'row',
+  marginBottom: '20px',
+});
+
+export const smartphone = style({
+  marginRight: '1rem',
+  '@media': {
+    '(min-width: 768px)': {
+      marginRight: '3rem',
+    },
+  },
+});
+
+export const laptop = style({
+  marginLeft: '1rem',
+
+  '@media': {
+    '(min-width: 768px)': {
+      marginLeft: '3rem',
+
+    },
+  },
+});
+
+
+//______________________CONTENT
+
+export const content = style({
+  display: 'grid',
+  gridTemplateColumns: '1fr',
+  rowGap: '1rem',
+  padding: '8vmin 4vmin',
+
+});
+
+export const section = style({
+  padding: '1rem',
+});
+
+export const heading = style({
+  fontSize: '1.2rem',
+  marginBottom: '0.5rem',
+});
+
+export const paragraph = style({
+  fontSize: '1rem',
+});
+
+
+
+//______________________FOOTER
+export const footer = style({
+  textAlign: 'center',
+  padding: '20px',
+  color: '#201E1B',
+  paddingTop: '20.6rem',
+  paddingLeft: '1rem',
+  paddingRight: '1rem',
+});
+
+export const footerContainer = style({
+  paddingBottom: '1rem',
+  gap: '.75rem',
+  justifyContent: 'space-between',
+  display: 'flex',
+  width: '100%',
+
+  '@media': {
+    '(min-width: 950px)': {
+      marginLeft: 'auto',
+      marginRight: 'auto',
+      maxWidth: '900px',
+    },
+},
+});
+
+export const footerMenu = style({
+  fontSize: '.6875rem',
+  lineHeight: '1.05rem',
+  columnGap: '1.25rem',
+  display: 'flex',
+  flexDirection: 'column',
+  textTransform: 'uppercase',
+  textAlign: 'left',
+});
+
+export const footerLinks = style({
+  marginTop: '.50rem',
+  columnGap: '1rem',
+  display: 'flex',
+  marginBottom: '1rem',
+
+  '@media': {
+    '(min-width: 640px)': {
+      flexDirection: 'row',
+    },
+
+    '(min-width: 768px)': {
+      marginLeft: '7rem',
+    },
+},
+});
+  
+export const footerText = style({
+  fontSize: '11px',
+  fontFamily: 'Poppins, sans-serif',
+  fontStyle: 'italic',
+  textAlign: 'left',
+  
+  '@media': {
+  '(min-width: 768px)': {
+    marginLeft: '7rem',
+    margin: 'auto',
+
+  },
+},
+
+});
+
+

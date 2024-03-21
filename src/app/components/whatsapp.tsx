@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Whatsapp from '../../../public/assets/images/whatsapp.png';
 import "../globals.css";
 
-const AnimatedNotification = () => {
+const wtsnotification = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ const AnimatedNotification = () => {
         whileHover={{ translateY: -5 }}
         whileTap={{ scale: 0.9 }}
       >
-        <Image src={Whatsapp} className='whatsapp-logo' alt="Logo Omijaia" style={{ width: '100px', height: 'auto' }} />
+        <Image src={Whatsapp} className='whatsapp-logo' alt="Whatsapp Logo" style={{ width: '50px', height: 'auto' }} />
         {isVisible && (
         <motion.div
             className="notification"
@@ -39,7 +39,7 @@ const AnimatedNotification = () => {
             animate={{ scale: 1 }}
             transition={{ type: 'spring', damping: 10, stiffness: 100 }}
           >
-            <p><b>1</b></p>
+            <b>1</b>
         </motion.div>
         )}
       </motion.div>
@@ -49,4 +49,4 @@ const AnimatedNotification = () => {
   );
 };
 
-export default AnimatedNotification;
+export default wtsnotification;
