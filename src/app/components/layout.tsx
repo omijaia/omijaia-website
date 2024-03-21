@@ -16,15 +16,15 @@ export default function Layout ({ children }: { children: React.ReactNode }) {
                 <link rel="alternate" hrefLang="es" href="https://omijaia.com/es/"></link>
                 <link rel="alternate" hrefLang="es" href="https://omijaia.com/br/"></link>
                 <link rel="alternate" hrefLang="x-default" href="https://www.omijaia.com"></link>
-                <title>Web & Software Development | Business solutions & Visual Identity </title>
-                <meta name="description" content="I will develop your website or application. You will learn along the way, SEO will be optimised and I will provide you with the necessary documentation. | WEB | APP | SEO | E-COMMERCE | LANDING PAGE | E-LEARNING." />
+                <title>I'll Create Your Website | Business Solutions </title>
+                <meta name="description" content="Bring me your idea, and I will develop it while you learn along the way. SEO will be optimised and I provide you with the necessary documentation. | WEB | APP | SEO | E-COMMERCE | LANDING PAGE | E-LEARNING." />
                 <link rel="canonical" href="https://www.omijaia.com/"></link>
                 <meta property="og:locale" content="en_EN"></meta>
                 <meta property="og:type" content="website"></meta>
-                <meta property="og:title" content="Web & Software Development | Business solutions & Visual Identity"></meta>
-                <meta property="og:description" content="I will develop your website or application. You will learn along the way, SEO will be optimised and I will provide you with the necessary documentation. | WEB | APP | SEO | E-COMMERCE | LANDING PAGE | E-LEARNING."></meta>
+                <meta property="og:title" content="I'll Create Your Website | Business Solutions"></meta>
+                <meta property="og:description" content="Bring me your idea, and I will develop it while you learn along the way. SEO will be optimised and I provide you with the necessary documentation. | WEB | APP | SEO | E-COMMERCE | LANDING PAGE | E-LEARNING."></meta>
                 <meta property="og:url" content="https://www.omijaia.com/"></meta>
-                <meta property="og:site_name" content="Business solutions & Visual Identity | Web & Software Development"></meta>
+                <meta property="og:site_name" content="Business Solutions | I'll Create Your Website"></meta>
                 <meta property="article:modified_time" content="2024-21-28T14:15:13+00:00"></meta>
                 <meta property="og:image" content=""></meta>
                 <meta property="og:image:width" content="512"></meta>
