@@ -9,7 +9,6 @@ const Works = () => {
   return (
     <Layout>
     <div>
-        <div className={styles.doit}>
           <strong>The Reality is...</strong>
           <br/>
           <p>
@@ -25,11 +24,7 @@ const Works = () => {
             your users, facilitating access to content and tracking student progress.
           </p>
         </div>
-        <div className={styles.imagesContainer}>
-          <img src={Smartphone.src} alt="Smartphone mockup" className={styles.smartphone} style={{ maxWidth: '30%', height: 'auto' }}  />
-          <img src={Notebook.src} alt="Notebook mockup" className={styles.notebook} style={{ maxWidth: '50%', height: 'auto%' }} />
-        </div>
-    </div>
+      
     </Layout>
 
   );

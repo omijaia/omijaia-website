@@ -3,6 +3,7 @@ import AppRouter from './approuter';
 import Nav from './components/nav';
 import Footer from './components/footer'; 
 import "../globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const App = () => {
     return (
@@ -10,6 +11,7 @@ const App = () => {
             <div>
                 <Nav /> 
                 <AppRouter />
+                <SpeedInsights/>
                 <Footer />
             </div>
         </Router>

@@ -12,7 +12,6 @@ const Post1 = () => {
 
         <Navbar />
     
-      <div className={styles.doit}>
         <strong>The Reality is...</strong>
         <br/>
         <p>
@@ -27,7 +26,6 @@ const Post1 = () => {
           If you have an <b>e-learning</b> platform, focus on providing an intuitive and engaging educational experience for
           your users, facilitating access to content and tracking student progress.
         </p>
-      </div>
       <Footer />
 
     </div>

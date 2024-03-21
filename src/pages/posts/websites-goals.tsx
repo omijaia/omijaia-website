@@ -1,5 +1,4 @@
 import React from 'react';
-import * as styles from '../../styles/styles.css';
 import Navbar from '../../app/components/nav';
 import Footer from '../../app/components/footer';
 
@@ -12,7 +11,6 @@ const Post2 = () => {
 
         <Navbar />
     
-      <div className={styles.doit}>
         <strong>The Reality is...</strong>
         <br/>
         <p>
@@ -27,7 +25,6 @@ const Post2 = () => {
           If you have an <b>e-learning</b> platform, focus on providing an intuitive and engaging educational experience for
           your users, facilitating access to content and tracking student progress.
         </p>
-      </div>
       <Footer />
      
     </div>
