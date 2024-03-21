@@ -6,12 +6,14 @@ export default function Layout ({ children }: { children: React.ReactNode }) {
     return (
         <>
                 <Head>
-                <link rel="icon" href="/favicon.ico" />
-                <meta charSet="UTF-8"/>                
+                <html lang="en">
+                <meta charSet="UTF-8"/>             
+                <link rel="icon" href="./favicon.ico" />   
+                <meta http-equiv="Cache-control" content="public"></meta>
+                <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="profile" href="https://gmpg.org/xfn/11"></link>
                 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"></meta>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="alternate" hrefLang="en" href="https://www.omijaia.com"></link>
                 <link rel="alternate" hrefLang="es" href="https://omijaia.com/es/"></link>
                 <link rel="alternate" hrefLang="es" href="https://omijaia.com/br/"></link>
@@ -30,7 +32,7 @@ export default function Layout ({ children }: { children: React.ReactNode }) {
                 <meta property="og:image:width" content="512"></meta>
                 <meta property="og:image:height" content="512"></meta>
                 <meta property="og:image:type" content="image/png"></meta>
-                
+                </html>
                 
                 </Head>
             <Nav />

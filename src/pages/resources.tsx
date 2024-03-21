@@ -2,8 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import Layout from '../app/components/layout';
 import * as styles from '../styles/styles.css'
-import Smartphone from '../../public/assets/images/smartphone.png';
-import Laptop from '../../public/assets/images/laptop.png';
 
 const Resources = () => {
   return (
@@ -45,10 +43,6 @@ const Resources = () => {
                   and I will provide the necessary documentation for you to learn how to manage your website and apply SEO techniques yourself. 
                   After a few walkthroughs, you'll be ready to go.
                 </p>
-            </div>
-            <div className={styles.imagesContainer}>
-              <Image src={Smartphone} alt="Smartphone mockup" className={styles.smartphone} style={{ maxWidth: '17%', height: 'auto' }}  />
-              <Image src={Laptop} alt="Laptop mockup" className={styles.laptop} style={{ maxWidth: '40%', height: 'auto' }} />
             </div>
         </div>
         

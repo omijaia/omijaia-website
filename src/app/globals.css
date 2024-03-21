@@ -39,6 +39,10 @@ a {
   font-size: 11px;
 }
 
+.button span {
+  color: #F4F4ED;
+  font-size: 16px;
+}
 
 /*_______NAVBAR_______*/
 .main_nav {

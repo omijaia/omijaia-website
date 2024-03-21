@@ -3,6 +3,7 @@ import Link from 'next/link';
 import * as styles from '../styles/styles.css';
 import Card from '../app/components/cardinfo';
 import Layout from '../app/components/layout';
+import "../app/globals.css";
 
 const Index = () => {
   return (

@@ -66,6 +66,7 @@ export const button = style({
   transition: 'box-shadow 0.1s, transform 0.1s, background-color 0.3s',
   textDecoration: 'none',
   userSelect: 'none',
+
   ':active': {
     boxShadow: '#422800 2px 2px 0 0',
     transform: 'translate(2px, 2px)',

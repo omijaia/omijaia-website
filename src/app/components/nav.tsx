@@ -11,7 +11,7 @@ const Nav = () => {
     <nav>
       <div className='main_nav'>
           <Link href="/">
-              <Image src={Omijaia} className={nav.logo} alt="Logo Omijaia" style={{ width: '50px', height: 'auto' }} />
+              <Image src={Omijaia} className={nav.logo} alt="Logo Omijaia" loading="lazy" style={{ width: '50px', height: 'auto' }} />
           </Link>
         
         <div className={nav.navLinks}>
