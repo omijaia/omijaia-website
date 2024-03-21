@@ -1,10 +1,11 @@
+'use client'
 import { motion } from "framer-motion";
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import Whatsapp from '../../../public/assets/images/whatsapp.png';
+import WhatsappLogo from '../../../public/assets/images/whatsapp.png';
 import "../globals.css";
 
-const wtsnotification = () => {
+const Whatsapp = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -31,7 +32,7 @@ const wtsnotification = () => {
         whileHover={{ translateY: -5 }}
         whileTap={{ scale: 0.9 }}
       >
-        <Image src={Whatsapp} className='whatsapp-logo' alt="Whatsapp Logo" style={{ width: '50px', height: 'auto' }} />
+        <Image src={WhatsappLogo} className='whatsapp-logo' alt="Whatsapp Logo" style={{ width: '50px', height: 'auto' }} />
         {isVisible && (
         <motion.div
             className="notification"
@@ -49,4 +50,4 @@ const wtsnotification = () => {
   );
 };
 
-export default wtsnotification;
+export default Whatsapp;
