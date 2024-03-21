@@ -2,8 +2,7 @@ import React from 'react';
 import * as styles from '../../styles/styles.css';
 import Navbar from '../../app/components/nav';
 import Footer from '../../app/components/footer';
-import Smartphone from '../../../public/assets/images/smartphone.png';
-import Notebook from '../../../public/assets/images/notebook.png';
+;
 
 
 const Post1 = () => {
@@ -30,10 +29,7 @@ const Post1 = () => {
         </p>
       </div>
       <Footer />
-      <div className={styles.imagesContainer}>
-        <img src={Smartphone.src} alt="Smartphone mockup" className={styles.smartphone} style={{ maxWidth: '30%', height: 'auto' }}  />
-        <img src={Notebook.src} alt="Notebook mockup" className={styles.notebook} style={{ maxWidth: '50%', height: 'auto%' }} />
-      </div>
+
     </div>
   );
 };
