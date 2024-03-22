@@ -18,7 +18,8 @@ const mobileButtonSize = '45px';
   export const navLink = style({
     cursor: 'pointer', 
     transition: 'font-style 0.2s', 
-    
+    textTransform: 'uppercase',
+
     ':hover': {
       textDecoration: 'underline', 
     },
@@ -28,10 +29,7 @@ const mobileButtonSize = '45px';
       textDecoration: 'underline', 
     },
   });
-  
-  export const animatedNotification = style({
-    marginLeft: 'auto', 
-  });
+
 
 
 //______________________HERO
@@ -162,7 +160,9 @@ export const paragraph = style({
   fontSize: '1rem',
 });
 
-
+export const animatedNotification = style({
+  marginLeft: 'auto', 
+});
 
 //______________________FOOTER
 export const footer = style({
@@ -175,7 +175,6 @@ export const footer = style({
 });
 
 export const footerContainer = style({
-  paddingBottom: '1rem',
   gap: '.75rem',
   justifyContent: 'space-between',
   display: 'flex',

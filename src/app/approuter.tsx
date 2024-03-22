@@ -5,7 +5,7 @@ import Workflow from '../pages/workflow';
 import Works from '../pages/works';
 import About from '../pages/information';
 import GetInTouch from '../pages/get-in-touch';
-import Resources from '../pages/resources';
+{/*import Resources from '../pages/resources';*/}
 import Post2 from '../pages/posts/cibersecurity-resources';
 import Post1 from '../pages/posts/websites-goals';
 import NotFound from '../pages/404';
@@ -19,8 +19,8 @@ const AppRouter = () => {
         <Route path="/works" element={<Works />} />
         <Route path="/information" element={<About />} />
         <Route path="/get-in-touch" element={<GetInTouch />} />
-        <Route path="/reources" element={<Resources />} />
-        <Route path="/posts/website-goals" element={<Post1 />} />
+        {/*<Route path="/reources" element={<Resources />} />*/}
+        {/*<Route path="/posts/website-goals" element={<Post1 />} />*/}
         <Route path="/posts/cibersecurity-resources" element={<Post2 />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

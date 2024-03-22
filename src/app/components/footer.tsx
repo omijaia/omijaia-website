@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import * as styles from '../../styles/styles.css';
-
+import { AiOutlineInstagram, AiOutlineGithub, AiOutlineFacebook} from "react-icons/ai";
 
 const footer = () => {
   return (
@@ -12,7 +12,7 @@ const footer = () => {
           <ul className={styles.navLinks}>
             <li className={styles.navLink}><Link href="/workflow">Workflow</Link></li>
             <li className={styles.navLink}><Link href="/works">Works</Link></li>
-            <li className={styles.navLink}><Link href="/resources">Resources</Link></li>
+           {/* <li className={styles.navLink}><Link href="/resources">Resources</Link></li> */}
             <li className={styles.navLink}><Link href="/information">Information</Link></li>
             <li className={styles.navLink}><Link href="mailto:hiomijaia@gmail.com">Contact</Link></li>
           </ul>
@@ -20,20 +20,18 @@ const footer = () => {
         <div className={styles.footerLinks}>
         <ul>
             <li>
-            <a href="https://github.com/omijaia" target="_blank" rel="noopener">
-            <i className='bx bxl-github bx-xs'></i>
-
+            <a href="https://github.com/omijaia" target="_blank" rel="noopener">              <AiOutlineGithub />
             </a>
             </li>
             <li>
             <a href="https://facebook.com/omijaia" target="_blank" rel="noopener">
-            <i className='bx bxl-facebook bx-xs'></i>
+              <AiOutlineFacebook />
             </a>
             </li>
 
             <li>
-            <a href="https://instagra.com/omijaia" target="_blank" rel="noopener">
-            <i className='bx bxl-instagram bx-xs'></i>
+            <a href="https://instagram.com/omijaia" target="_blank" rel="noopener">
+              <AiOutlineInstagram />
             </a>
             </li>
             </ul>

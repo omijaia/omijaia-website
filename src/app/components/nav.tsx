@@ -16,13 +16,13 @@ const Nav = () => {
         
         <div className={nav.navLinks}>
           <Link className={nav.navLink} href="/workflow">
-            WORKFLOW
+            Workflow
           </Link>
           <Link className={nav.navLink} href="/works">
-            WORKS 
+            Works 
           </Link>
           <Link className={nav.navLink} href="/information">
-            INFORMATION
+            Information
           </Link>
         </div>
         <div className={nav.animatedNotification}>
