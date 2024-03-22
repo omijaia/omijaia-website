@@ -32,7 +32,7 @@ const Whatsapp = () => {
         whileHover={{ translateY: -5 }}
         whileTap={{ scale: 0.9 }}
       >
-        <Image src={WhatsappLogo} className='whatsapp-logo' alt="Whatsapp Logo" loading="lazy" style={{ width: '50px', height: 'auto' }} />
+        <Image src={WhatsappLogo} className='whatsapp-logo' alt="Whatsapp Logo" loading="eager" style={{ width: '50px', height: 'auto' }} />
         {isVisible && (
         <motion.div
             className="notification"

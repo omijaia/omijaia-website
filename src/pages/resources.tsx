@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Layout from '../app/components/layout';
+import Layout from '../app/layout';
 import * as styles from '../styles/styles.css'
 
 const Resources = () => {

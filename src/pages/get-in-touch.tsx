@@ -1,6 +1,6 @@
   import React from 'react';
   import Script from 'next/script'
-  import Layout from '../app/components/layout';
+  import Layout from '../app/layout';
   import * as styles from '../styles/styles.css'
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import * as styles from '../styles/styles.css';
-import Layout from '../app/components/layout';
+import Layout from '../app/layout';
 
 
 
