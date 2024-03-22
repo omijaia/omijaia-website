@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Omijaia from '../../../public/assets/images/omijaia.png';
+import Omijaia from '../../../public/assets/images/omijaia.svg';
 import * as nav from '../../styles/styles.css';
 import WhatsApp from '../components/whatsapp';
 import "../globals.css";

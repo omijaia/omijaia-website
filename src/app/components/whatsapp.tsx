@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import WhatsappLogo from '../../../public/assets/images/whatsapp.png';
+import WhatsappLogo from '../../../public/assets/images/whatsapp.svg';
 import "../globals.css";
 
 const Whatsapp = () => {
