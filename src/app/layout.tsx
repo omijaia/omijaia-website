@@ -1,5 +1,4 @@
-import Nav from './components/nav'; 
-import Footer from './components/footer';
+
 import Head from 'next/head';
 
 export default function Layout ({ children }: { children: React.ReactNode }) {
@@ -11,7 +10,6 @@ export default function Layout ({ children }: { children: React.ReactNode }) {
                 <meta http-equiv="Cache-control" content="public"></meta>
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <link rel="profile" href="https://gmpg.org/xfn/11"></link>
-                <link rel="stylesheet" href="./globals.css"></link>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="author" content="omijaia"></meta>
                 <meta name="keywords" content="web, app, seo, e-commerce, landing page, e-learning, websites, e-commerce"></meta>
@@ -41,16 +39,13 @@ export default function Layout ({ children }: { children: React.ReactNode }) {
                 <meta name="twitter:image" content=""></meta>
                 <meta name="twitter:image:width" content="512"></meta>
                 <meta name="twitter:image:height" content="512"></meta>
-                <meta name="twitter:site" content="@omijaia"></meta>
                 <meta name="twitter:creator" content="@omijaia"></meta>
                 <meta name="twitter:label1" content="Est. reading time"></meta>
                 <meta name="twitter:data1" content="1 minute"></meta>
                 <meta name="twitter:label2" content="Written by"></meta>
                 <meta name="twitter:data2" content="omijaia"></meta>
         </Head>
-            <Nav />
             <main>{children}</main>
-            <Footer />
         </>
     );
 };

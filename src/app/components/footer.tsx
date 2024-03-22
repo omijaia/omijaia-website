@@ -20,7 +20,8 @@ const footer = () => {
         <div className={styles.footerLinks}>
         <ul>
             <li>
-            <a href="https://github.com/omijaia" target="_blank" rel="noopener">              <AiOutlineGithub />
+            <a href="https://github.com/omijaia" target="_blank" rel="noopener">              
+            <AiOutlineGithub />
             </a>
             </li>
             <li>

@@ -8,14 +8,12 @@ import "../app/globals.css";
 const Index = () => {
   return (
     <Layout>
-      <div>
         <div className={styles.hero}>
           <span className={styles.buttonText}>Get your website</span>
           <Link href="/get-in-touch" className={styles.button}>
           </Link>
         </div>
         <Card />
-      </div>
     </Layout>
   );
 };
