@@ -199,6 +199,12 @@ export const footerMenu = style({
   textAlign: 'left',
 });
 
+export const footerIcons = style({
+
+  fontSize: '1rem',
+
+});
+
 export const footerLinks = style({
   marginTop: '.50rem',
   columnGap: '1rem',
@@ -232,4 +238,16 @@ export const footerText = style({
 
 });
 
+
+export const footerRights = style({
+    width: '100%',
+    paddingLeft: '1rem',
+    paddingRight: '1rem',
+    paddingBottom: '.625rem',
+    fontSize: '.6875rem',
+    lineHeight: '1.05rem',
+    color: '#807f7b',
+    justifyContent: 'center',
+    display: 'flex',
+});
 
