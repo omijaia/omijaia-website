@@ -10,9 +10,9 @@ const GetInTouch = () => {
     <Layout>
       <div className={styles.hero}></div>
       <div className={styles.content}>
-        <Script src="https://forms.plumsail.com/api/widget/1aca2600-29ce-4e33-a521-eae0983600bc"></Script>
+        <Script id="plumsail-form" src="https://forms.plumsail.com/api/widget/1aca2600-29ce-4e33-a521-eae0983600bc"></Script>
         <div id="plumsail-form-1711213493843"><div className="fd-form-loading"></div></div>
-        <Script type="text/javascript">    
+        <Script id="plumsail-form" type="text/javascript">    
         var fd = new Plumsail.Form("#plumsail-form-1711213493843", "1aca2600-29ce-4e33-a521-eae0983600bc");
         </Script>        
         

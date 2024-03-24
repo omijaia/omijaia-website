@@ -159,6 +159,7 @@ export const buttonsContainer = style({
 
 export const list = style({
   textAlign: 'left',
+  marginTop: '1rem',
 });
 
 export const imageContainer = style({
@@ -166,7 +167,7 @@ export const imageContainer = style({
 });
 
 export const profile = style({
-  width: '250px',
+  width: '150px',
   height: 'auto',
 });
 
