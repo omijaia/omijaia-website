@@ -5,7 +5,6 @@ import "../globals.css";
 
 const cardinfo = () => {
   return (
-    <div>       
                     
   <div className={card.main}>
     <div className={card.postfeed}>
@@ -77,7 +76,8 @@ const cardinfo = () => {
         </div>
         </Link>
       </div>
-      <Link href="/posts/cibersecurity-resources">
+
+      {/*<Link href="/posts/cibersecurity-resources">
 
       <div className={`${card.cardblog} ${card.cardHover}`}>
         <div className={card.headerblog}>
@@ -94,9 +94,8 @@ const cardinfo = () => {
         </div>
       </div>
       </Link>
-
+  */}
     </div>
-  </div>
   </div>
 );
 };

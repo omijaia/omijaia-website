@@ -5,9 +5,11 @@ const desktopFontSize = '100px';
 const mobileButtonSize = '45px';
 
 //______________________NAVBAR
+
   export const logo = style({
     justifyContent: 'flex-start',
     marginRight: '3vmin',
+    marginBottom: '.5rem',
   });
 
   export const navLinks = style({
@@ -28,9 +30,12 @@ const mobileButtonSize = '45px';
       fontWeight: 'bold',
       textDecoration: 'underline', 
     },
+
+    ':focus': {  
+      fontWeight: 'bold',
+      textDecoration: 'underline', 
+    },
   });
-
-
 
 //______________________HERO
 
@@ -108,34 +113,16 @@ export const title = style({
 });
 
 //______________________IMAGES
-export const imagesContainer = style({
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  flexDirection: 'row',
-  marginBottom: '20px',
-});
 
-export const smartphone = style({
+export const workImage = style({
+  float: 'left',
   marginRight: '1rem',
-  '@media': {
-    '(min-width: 768px)': {
-      marginRight: '3rem',
-    },
-  },
 });
 
-export const laptop = style({
-  marginLeft: '1rem',
-
-  '@media': {
-    '(min-width: 768px)': {
-      marginLeft: '3rem',
-
-    },
-  },
+export const image = style({
+  width: '73px',
+  height: 'auto',
 });
-
 
 //______________________CONTENT
 
@@ -163,6 +150,29 @@ export const paragraph = style({
 export const animatedNotification = style({
   marginLeft: 'auto', 
 });
+
+export const link = style({
+  textDecoration: 'none',
+  ':hover': {
+    textDecoration: 'underline',
+  },
+  fontSize: '1rem',
+  marginLeft: '5.6rem',
+});
+
+export const working = style({
+  textDecoration: 'none',
+  fontSize: '1rem',
+  marginLeft: '5.6rem',
+
+});
+
+export const textContainer = style({
+  overflow: 'hidden',
+  marginBottom: '1rem',
+
+});
+
 
 //______________________FOOTER
 export const footer = style({
@@ -232,7 +242,6 @@ export const footerText = style({
   '(min-width: 768px)': {
     marginLeft: '7rem',
     margin: 'auto',
-
   },
 },
 

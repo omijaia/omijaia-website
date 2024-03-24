@@ -1,34 +1,61 @@
 import React from 'react';
-import * as styles from '../styles/styles.css';
+import Image from 'next/image';
 import Layout from '../app/layout';
-
+import * as styles from '../styles/styles.css'
+import { AiOutlineArrowRight, AiOutlineCoffee } from "react-icons/ai";
+import Tremunda from '../../public/assets/images/works/tremunda.ico';
+import MasterPieceOf from '../../public/assets/images/works/masterpieceof.ico';
+import VosEnglish from '../../public/assets/images/works/vosenglish.ico';
 
 
 const Works = () => {
-
   return (
     <Layout>
-    <div>
-          <strong>The Reality is...</strong>
-          <br/>
-          <p>
-            If you have an <b>e-commerce</b>, ensure that your website effectively caters to the search intent of the final buyer
-            through artificial intelligence and is well-positioned with SEO.
-            <br />
-            <br />
-            If you have a <b>landing page</b>, make sure it captures the attention of your visitors and motivates them to take a
-            specific action.
-            <br />
-            <br />
-            If you have an <b>e-learning</b> platform, focus on providing an intuitive and engaging educational experience for
-            your users, facilitating access to content and tracking student progress.
-          </p>
-        </div>
-      
+      <div className={styles.hero}>
+      </div>
+          <div className={styles.content}>
+
+          <div className={styles.section}>
+            <div className={styles.workImage}>
+                <Image src={MasterPieceOf} alt="Master Piece Of" className={styles.image} />
+              </div>
+              <div className={styles.textContainer}>
+                <h2 className={styles.heading}>Master Piece Of</h2>
+                <p className={styles.paragraph}>Use AI to refine your sketch into an image. Replicate's API allows you to run machine learning models in the cloud, while Control-NET, an open-source model, generates images from text and scribbles.</p>
+              </div>
+
+            </div>
+
+
+          <div className={styles.section}>
+              <div className={styles.workImage}>
+                <Image src={Tremunda} alt="Tremunda" className={styles.image} />
+              </div>
+              <div className={styles.textContainer}>
+                <h2 className={styles.heading}>Tremunda</h2>
+                <p className={styles.paragraph}>Tremunda's website is a single-page application that integrates with Calendly for appointment booking. It serves as an inflection point between social media and functions as a blog and e-commerce platform.</p>
+              </div>
+              <a href="https://tremunda.com" target="_blank" className={styles.link}>Visit Website <AiOutlineArrowRight /></a>
+            </div>
+
+            <div className={styles.section}>
+              <div className={styles.workImage}>
+                <Image src={VosEnglish} alt="VosEnglish" className={styles.image} />
+              </div>
+              <div className={styles.textContainer}>
+                <h2 className={styles.heading}>Vos English</h2>
+                <p className={styles.paragraph}>E-learning platform for English language education with complete free resources and student track progress.</p>
+              </div>
+              <a className={styles.working}>Working on <AiOutlineCoffee /></a>
+            </div>
+
+          
+          </div>
+            
+        
     </Layout>
-
   );
-
 };
 
 export default Works;
+

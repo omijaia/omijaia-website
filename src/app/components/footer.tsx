@@ -41,7 +41,8 @@ const footer = () => {
       </div>
     </div>
     <div className={styles.footerRights}>
-        <div>2024 © Omijaia</div>
+        <div>2024 © Omijaia
+      </div>
       </div>
     </>
   );

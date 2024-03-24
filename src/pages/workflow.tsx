@@ -1,5 +1,4 @@
   import React from 'react';
-  import Image from 'next/image';
   import Layout from '../app/layout';
   import GetInTouch from './get-in-touch';
   import * as styles from '../styles/styles.css'
@@ -45,8 +44,8 @@
                     After a few walkthroughs, you'll be ready to go.
                   </p>
               </div>
+              <GetInTouch />
           </div>
-          
       </Layout>
     );
   };
