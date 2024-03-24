@@ -151,29 +151,95 @@ export const animatedNotification = style({
   marginLeft: 'auto', 
 });
 
+
+export const buttonsContainer = style({
+  display: 'flex',
+  justifyContent: 'center',
+});
+
+export const list = style({
+  textAlign: 'left',
+});
+
+export const imageContainer = style({
+  marginBottom: '1rem',
+});
+
+export const profile = style({
+  width: '250px',
+  height: 'auto',
+});
+
+//______________________WORKS
+
 export const link = style({
   textDecoration: 'none',
   ':hover': {
     textDecoration: 'underline',
   },
   fontSize: '1rem',
-  marginLeft: '5.6rem',
+  justifyContent: 'flex-start',
 });
 
 export const working = style({
   textDecoration: 'none',
   fontSize: '1rem',
-  marginLeft: '5.6rem',
-
+  justifyContent: 'flex-start',
 });
 
 export const textContainer = style({
   overflow: 'hidden',
-  marginBottom: '1rem',
+  marginBottom: '.5rem',
 
 });
 
+export const buttonContainer = style({
+  display: 'grid',
+  gap: '.5rem',
+  marginTop: '.5rem',
+  gridTemplateColumns: 'repeat(2, minmax(0, auto))', 
 
+  '@media': {
+    '(min-width: 660px)': {
+      gridTemplateColumns: 'repeat(5, minmax(0, auto))', 
+    },
+  },
+});
+
+export const techButton = style({
+  width: 'fit-content', 
+  backgroundColor: '#201e1b',
+  color: '#f4f4ed',
+  padding: '.5rem 1rem',
+  marginBottom: '.5rem',
+  border: 'none',
+  cursor: 'pointer',
+  transition: 'background-color 0.2s',
+  ':hover': {
+    backgroundColor: '#4f4942',
+  },
+});
+
+//______________________POSTS
+export const headerPost = style({
+  padding: '0 0 11vmin',
+});
+
+export const headerPostText = style({
+  fontSize: '1.25rem',
+  lineHeight: '1.5rem',
+  fontWeight: '700',
+  marginBottom: '1rem',
+  textTransform: 'uppercase',
+});
+
+export const metaPost = style({
+  fontSize: '.625rem',
+  lineHeight: '1rem',
+  color: '#807f7b',
+  letterSpacing: '.4px',
+  textTransform: 'uppercase',
+});
 //______________________FOOTER
 export const footer = style({
   textAlign: 'center',

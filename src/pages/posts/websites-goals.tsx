@@ -10,6 +10,10 @@ return (
       </div>
           <div className={styles.content}>
             <div className={styles.section}>
+              <div className={styles.headerPost}>
+                <span className={styles.metaPost}>24 Mar 2024 • 1 Min read</span>
+                <h1 className={styles.headerPostText}>Websites Goals</h1>
+              </div>
               <h2 className={styles.heading}>E-commerce</h2>
               <p className={styles.paragraph}>
               Make sure your website is properly positioned for search engines and uses artificial intelligence to efficiently respond to the end buyer's search intent. 
