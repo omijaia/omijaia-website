@@ -5,6 +5,7 @@ import { AiOutlineInstagram, AiOutlineGithub, AiOutlineFacebook} from "react-ico
 
 const footer = () => {
   return (
+    <>
     <div className={styles.footer}>
       <div className={styles.footerContainer}>
         <div className={styles.footerText}>This is a rat race, but I'm no rat, I'm a turtle, ninja turtle. So what's your favorite? Mine is Michaelangelo.</div>
@@ -20,24 +21,30 @@ const footer = () => {
         <div className={styles.footerLinks}>
         <ul>
             <li>
-            <a href="https://github.com/omijaia" target="_blank" rel="noopener">              <AiOutlineGithub />
+            <a href="https://github.com/omijaia" target="_blank" rel="noopener">              
+            <AiOutlineGithub className={styles.footerIcons} />
             </a>
             </li>
             <li>
             <a href="https://facebook.com/omijaia" target="_blank" rel="noopener">
-              <AiOutlineFacebook />
+              <AiOutlineFacebook className={styles.footerIcons} />
             </a>
             </li>
 
             <li>
             <a href="https://instagram.com/omijaia" target="_blank" rel="noopener">
-              <AiOutlineInstagram />
+              <AiOutlineInstagram className={styles.footerIcons} />
             </a>
             </li>
             </ul>
         </div>
       </div>
     </div>
+    <div className={styles.footerRights}>
+        <div>2024 © Omijaia
+      </div>
+      </div>
+    </>
   );
 };
 

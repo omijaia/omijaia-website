@@ -5,9 +5,11 @@ const desktopFontSize = '100px';
 const mobileButtonSize = '45px';
 
 //______________________NAVBAR
+
   export const logo = style({
     justifyContent: 'flex-start',
     marginRight: '3vmin',
+    marginBottom: '.5rem',
   });
 
   export const navLinks = style({
@@ -28,9 +30,12 @@ const mobileButtonSize = '45px';
       fontWeight: 'bold',
       textDecoration: 'underline', 
     },
+
+    ':focus': {  
+      fontWeight: 'bold',
+      textDecoration: 'underline', 
+    },
   });
-
-
 
 //______________________HERO
 
@@ -108,34 +113,16 @@ export const title = style({
 });
 
 //______________________IMAGES
-export const imagesContainer = style({
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  flexDirection: 'row',
-  marginBottom: '20px',
-});
 
-export const smartphone = style({
+export const workImage = style({
+  float: 'left',
   marginRight: '1rem',
-  '@media': {
-    '(min-width: 768px)': {
-      marginRight: '3rem',
-    },
-  },
 });
 
-export const laptop = style({
-  marginLeft: '1rem',
-
-  '@media': {
-    '(min-width: 768px)': {
-      marginLeft: '3rem',
-
-    },
-  },
+export const image = style({
+  width: '73px',
+  height: 'auto',
 });
-
 
 //______________________CONTENT
 
@@ -164,6 +151,96 @@ export const animatedNotification = style({
   marginLeft: 'auto', 
 });
 
+
+export const buttonsContainer = style({
+  display: 'flex',
+  justifyContent: 'center',
+});
+
+export const list = style({
+  textAlign: 'left',
+  marginTop: '1rem',
+});
+
+export const imageContainer = style({
+  marginBottom: '1rem',
+});
+
+export const profile = style({
+  width: '150px',
+  height: 'auto',
+});
+
+//______________________WORKS
+
+export const link = style({
+  textDecoration: 'none',
+  ':hover': {
+    textDecoration: 'underline',
+  },
+  fontSize: '1rem',
+  justifyContent: 'flex-start',
+});
+
+export const working = style({
+  textDecoration: 'none',
+  fontSize: '1rem',
+  justifyContent: 'flex-start',
+});
+
+export const textContainer = style({
+  overflow: 'hidden',
+  marginBottom: '.5rem',
+
+});
+
+export const buttonContainer = style({
+  display: 'grid',
+  gap: '.5rem',
+  marginTop: '.5rem',
+  gridTemplateColumns: 'repeat(2, minmax(0, auto))', 
+
+  '@media': {
+    '(min-width: 660px)': {
+      gridTemplateColumns: 'repeat(5, minmax(0, auto))', 
+    },
+  },
+});
+
+export const techButton = style({
+  width: 'fit-content', 
+  backgroundColor: '#201e1b',
+  color: '#f4f4ed',
+  padding: '.5rem 1rem',
+  marginBottom: '.5rem',
+  border: 'none',
+  cursor: 'pointer',
+  transition: 'background-color 0.2s',
+  ':hover': {
+    backgroundColor: '#4f4942',
+  },
+});
+
+//______________________POSTS
+export const headerPost = style({
+  padding: '0 0 11vmin',
+});
+
+export const headerPostText = style({
+  fontSize: '1.25rem',
+  lineHeight: '1.5rem',
+  fontWeight: '700',
+  marginBottom: '1rem',
+  textTransform: 'uppercase',
+});
+
+export const metaPost = style({
+  fontSize: '.625rem',
+  lineHeight: '1rem',
+  color: '#807f7b',
+  letterSpacing: '.4px',
+  textTransform: 'uppercase',
+});
 //______________________FOOTER
 export const footer = style({
   textAlign: 'center',
@@ -199,6 +276,12 @@ export const footerMenu = style({
   textAlign: 'left',
 });
 
+export const footerIcons = style({
+
+  fontSize: '1rem',
+
+});
+
 export const footerLinks = style({
   marginTop: '.50rem',
   columnGap: '1rem',
@@ -226,10 +309,21 @@ export const footerText = style({
   '(min-width: 768px)': {
     marginLeft: '7rem',
     margin: 'auto',
-
   },
 },
 
 });
 
+
+export const footerRights = style({
+    width: '100%',
+    paddingLeft: '1rem',
+    paddingRight: '1rem',
+    paddingBottom: '.625rem',
+    fontSize: '.6875rem',
+    lineHeight: '1.05rem',
+    color: '#807f7b',
+    justifyContent: 'center',
+    display: 'flex',
+});
 
