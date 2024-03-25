@@ -21,6 +21,7 @@ const mobileButtonSize = '45px';
     cursor: 'pointer', 
     transition: 'font-style 0.2s', 
     textTransform: 'uppercase',
+    padding: '0.1rem',
 
     ':hover': {
       textDecoration: 'underline', 
@@ -47,7 +48,7 @@ export const hero = style({
   alignItems: 'right', 
   marginLeft: 'auto',
   paddingRight: '18px',
-  marginTop: '8rem',
+  marginTop: '9rem',
 
   '@media': {
     '(min-width: 768px)': {
@@ -243,6 +244,43 @@ export const metaPost = style({
   letterSpacing: '.4px',
   textTransform: 'uppercase',
 });
+
+//______________________ABOUT
+export const profileContainer = style({
+  display: 'flex',
+  alignItems: 'center',
+
+  '@media': {
+    '(max-width: 660px)': {
+      flexDirection: 'column', 
+    },
+  },
+});
+
+export const profileImage = style({
+  width: '200px', 
+  height: 'auto',
+  marginBottom: '20px',
+
+  '@media': {
+    '(max-width: 660px)': {
+      marginRight: '0',  
+    },
+  },
+});
+
+export const textAbout = style({
+  textAlign: 'center', 
+  marginLeft: '1rem',
+
+  '@media': {
+    '(max-width: 660px)': {
+      flex: '1', 
+    },
+  },
+});
+
+
 //______________________FOOTER
 export const footer = style({
   textAlign: 'center',
@@ -279,8 +317,8 @@ export const footerMenu = style({
 });
 
 export const footerIcons = style({
-
   fontSize: '1rem',
+  marginBottom: '.5rem',
 
 });
 

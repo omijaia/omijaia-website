@@ -11,11 +11,12 @@ const footer = () => {
         <div className={styles.footerText}>This is a rat race, but I'm no rat, I'm a turtle, ninja turtle. So what's your favorite? Mine is Michaelangelo.</div>
         <div className={styles.footerMenu}>
           <ul className={styles.navLinks}>
+            <li className={styles.navLink}><Link href="/works">Visual Identity</Link></li>
             <li className={styles.navLink}><Link href="/workflow">Workflow</Link></li>
             <li className={styles.navLink}><Link href="/works">Works</Link></li>
            {/* <li className={styles.navLink}><Link href="/resources">Resources</Link></li> */}
-            <li className={styles.navLink}><Link href="/information">Information</Link></li>
-            <li className={styles.navLink}><Link href="mailto:hiomijaia@gmail.com">Contact</Link></li>
+           <li className={styles.navLink}><Link href="mailto:hiomijaia@gmail.com">Contact</Link></li>
+            <li className={styles.navLink}><Link href="/about">About</Link></li>
           </ul>
         </div>
         <div className={styles.footerLinks}>

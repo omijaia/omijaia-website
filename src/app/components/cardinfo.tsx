@@ -25,7 +25,7 @@ const cardinfo = () => {
       </div>
       </Link>
 
-      <Link href="/information">
+      <Link href="/visual-identity">
         <div className={`${card.card} ${card.cardHover}`}>
           <div className={card.header}>
             <div className={card.id}>
@@ -37,7 +37,7 @@ const cardinfo = () => {
             </div>
           </div>
           <div className={card.content}>
-            <small className={card.textbase}>Logo, Banner and Assets</small>
+            <small className={card.textbase}>Logos, banners and assets for your brand</small>
           </div>
         </div>
       </Link>
@@ -59,7 +59,7 @@ const cardinfo = () => {
       </div>
       </Link>
 
-      <Link href="/information">
+      <Link href="/about">
         <div className={`${card.card} ${card.cardHover}`}>
           <div className={card.header}>
             <div className={card.id}>

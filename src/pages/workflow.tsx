@@ -1,7 +1,9 @@
   import React from 'react';
+  import Link from 'next/link';
   import Layout from '../app/layout';
   import GetInTouch from './get-in-touch';
   import * as styles from '../styles/styles.css'
+  
 
   const Workflow = () => {
     return (
@@ -24,9 +26,8 @@
               </div>
               
               <div className={styles.section}>
-                  <h2 className={styles.heading}>III. SEO Analysis</h2>
-                  <p className={styles.paragraph}>We'll cover keyword research, competitor analysis, and on-page optimization to ensure your website is well-prepared to rank prominently. 
-                    Additionally, we'll implement GEO (Generative Engine Optimization), a new trend that leverages artificial intelligence 
+                  <h2 className={styles.heading}>III. SEO On Page</h2>
+                  <p className={styles.paragraph}>We'll cover keyword research, competitor analysis, and on-page optimization to ensure your website is well-prepared to rank prominently.
                   </p>
               </div>
 
@@ -35,16 +36,18 @@
                   <p className={styles.paragraph}>We'll discuss the look and feel of the site, and how we can catch your web visitors. 
                     Based on this conversation, I'll design Figma mockups of your site's pages for your review before finalizing them. 
                   </p>
-              </div>
+                </div>
               
                 <div className={styles.section}>
                   <h2 className={styles.heading}>V. Develop & Launch</h2>
-                  <p className={styles.paragraph}>I'll develop your website or application. Google Analytics will be installed, SEO will be optimized, 
-                    and I will provide the necessary documentation for you to learn how to manage your website and apply SEO techniques yourself. 
+                  <p className={styles.paragraph}>I'll develop your website. Google Analytics will be installed, initial SEO will be optimized, 
+                    and I will provide the necessary documentation for you to learn how to manage your website yourself. 
                     After a few walkthroughs, you'll be ready to go.
                   </p>
-              </div>
-              <GetInTouch />
+                </div>
+              <span className={styles.buttonText}>Get your website</span>
+          <Link href="https://plumsail-8tvh9dr5k4qe.plumsail.io/1aca2600-29ce-4e33-a521-eae0983600bc/5ce2edc6-e67a-4a7e-ba74-2a0186da16d2" className={styles.button}>
+          </Link>
           </div>
       </Layout>
     );

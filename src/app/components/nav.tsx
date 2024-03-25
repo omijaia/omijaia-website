@@ -15,15 +15,16 @@ const Nav = () => {
           </Link>
         
         <div className={nav.navLinks}>
+          <Link className={nav.navLink} href="/visual-identity">
+            Visual Identity
+          </Link>
           <Link className={nav.navLink} href="/workflow">
             Workflow
           </Link>
           <Link className={nav.navLink} href="/works">
             Works 
           </Link>
-          <Link className={nav.navLink} href="/information">
-            Information
-          </Link>
+          
         </div>
         <div className={nav.animatedNotification}>
           <WhatsApp  />

@@ -10,7 +10,7 @@ const Index = () => {
     <Layout>
         <div className={styles.hero}>
           <span className={styles.buttonText}>Get your website</span>
-          <Link href="/get-in-touch" className={styles.button}>
+          <Link href="https://plumsail-8tvh9dr5k4qe.plumsail.io/1aca2600-29ce-4e33-a521-eae0983600bc/5ce2edc6-e67a-4a7e-ba74-2a0186da16d2" className={styles.button}>
           </Link>
         </div>
         <Card />

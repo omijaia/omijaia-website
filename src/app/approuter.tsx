@@ -2,8 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Index from '../pages/index';
 import Workflow from '../pages/workflow';
+import VisualIdentity from '../pages/visual-identity';
 import Works from '../pages/works';
-import About from '../pages/information';
+import About from '../pages/about';
 import GetInTouch from '../pages/get-in-touch';
 {/*import Resources from '../pages/resources';*/}
 {/*import Post2 from '../pages/posts/cibersecurity-resources';*/}
@@ -16,8 +17,9 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/workflow" element={<Workflow />} />
+        <Route path="/visual-identity" element={<VisualIdentity />} />
         <Route path="/works" element={<Works />} />
-        <Route path="/information" element={<About />} />
+        <Route path="/about" element={<About />} />
         <Route path="/get-in-touch" element={<GetInTouch />} />
         {/*<Route path="/reources" element={<Resources />} />*/}
         <Route path="/posts/website-goals" element={<Post1 />} />
