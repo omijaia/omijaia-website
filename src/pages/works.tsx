@@ -14,34 +14,13 @@ const Works = () => {
       <div className={styles.hero}>
       </div>
           <div className={styles.content}>
-
-          <div className={styles.section}>
-            <div className={styles.workImage}>
-                <Image src={MasterPieceOf} alt="The logo of Obra Maestra no? It's an AI model from Replicant that refine your sketch into an image" className={styles.image} />
-              </div>
-              <div className={styles.textContainer}>
-                <h2 className={styles.heading}>Obra Maestra no?</h2>
-                <div className={styles.buttonContainer}>
-                  <button className={styles.techButton}>NextJS</button>
-                  <button className={styles.techButton}>Tailwind CSS</button>
-                  <button className={styles.techButton}>Replicate</button>
-                  <button className={styles.techButton}>ControlNET</button>
-
-
-                </div>
-                <p className={styles.paragraph}>Use AI to refine your sketch into an image. Replicate's API allows you to run machine learning models in the cloud, while Control-NET, an open-source model, generates images from text and scribbles.</p>
-              </div>
-
-            </div>
-
-
           <div className={styles.section}>
               <div className={styles.workImage}>
                 <Image src={Tremunda} alt="Tremunda's personal brand logo and website" className={styles.image} />
               </div>
               <div className={styles.textContainer}>
                 <h2 className={styles.heading}>Tremunda</h2>
-                <div className={styles.buttonContainer}>
+                <div className={styles.techButtonContainer}>
                   <button className={styles.techButton}>NextJS</button>
                   <button className={styles.techButton}>Tailwind CSS</button>
                 </div>

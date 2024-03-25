@@ -174,6 +174,22 @@ export const profile = style({
   height: 'auto',
 });
 
+export const sharedButton = style({
+  width: 'fit-content', 
+  backgroundColor: '#201e1b',
+  color: '#f4f4ed',
+  padding: '.5rem 1rem',
+  marginBottom: '.5rem',
+  marginLeft: '1rem',
+  border: 'none',
+  cursor: 'pointer',
+  transition: 'background-color 0.2s',
+  ':hover': {
+    backgroundColor: '#4f4942',
+  },
+});
+
+
 //______________________VISUAL IDENTIY
 export const logoContainer = style({
   display: 'flex',
@@ -183,15 +199,15 @@ export const logoContainer = style({
 
 export const logos = style({
   position: 'relative',
-  width: '100px',
-  height: '100px', 
+  width: '100px', 
+  height: '100px',
+
 });
 
 export const logoImage = style({
   width: '100%',
   height: '100%',
   objectFit: 'contain',
-  transition: 'transform 0.3s ease-in-out',
 });
 
 
@@ -218,7 +234,7 @@ export const textContainer = style({
 
 });
 
-export const buttonContainer = style({
+export const techButtonContainer = style({
   display: 'grid',
   gap: '.5rem',
   marginTop: '.5rem',
@@ -346,6 +362,7 @@ export const footerMenu = style({
   fontSize: '.6875rem',
   lineHeight: '1.05rem',
   columnGap: '1.25rem',
+  height: '100%',
   display: 'flex',
   flexDirection: 'column',
   textTransform: 'uppercase',
@@ -354,16 +371,18 @@ export const footerMenu = style({
 
 export const footerIcons = style({
   fontSize: '1rem',
-  marginBottom: '.5rem',
+  marginTop: '.50rem',
 
 });
 
+
 export const footerLinks = style({
-  marginTop: '.50rem',
   columnGap: '1rem',
   display: 'flex',
   marginBottom: '1rem',
-
+  alignItems: 'flex-start',
+  
+  
   '@media': {
     '(min-width: 640px)': {
       flexDirection: 'row',
@@ -380,11 +399,12 @@ export const footerText = style({
   fontFamily: 'Poppins, sans-serif',
   fontStyle: 'italic',
   textAlign: 'left',
+  justifyContent: 'flex-start',
+  
   
   '@media': {
   '(min-width: 768px)': {
-    marginLeft: '7rem',
-    margin: 'auto',
+    maxWidth: '50%',
   },
 },
 
@@ -398,7 +418,8 @@ export const footerRights = style({
     fontSize: '.6875rem',
     lineHeight: '1.05rem',
     color: '#66645e',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     display: 'flex',
+    maxWidth: '70%'
 });
 

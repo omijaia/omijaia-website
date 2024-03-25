@@ -30,7 +30,7 @@ const About = () => {
       <div className={styles.hero}></div>
       <div className={styles.content}>
         <div className={styles.profileContainer}>
-          <Image src={Profile} alt="Miguel Muñoz" className={styles.profileImage} />
+          <Image src={Profile} alt="Miguel Muñoz" loading='lazy' className={styles.profileImage} />
           <div className={styles.textAbout}>
             <h2 className={styles.heading}>Miguel Muñoz</h2>
             <p className={styles.paragraph}>

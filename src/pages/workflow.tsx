@@ -10,6 +10,13 @@
         <div className={styles.hero}>
         </div>
             <div className={styles.content}>
+            <div className={styles.section}>
+                <h2 className={styles.heading}>I am not an expert</h2>
+                <p className={styles.paragraph}>I have an incredible hunger for progress and with 13 years of internet experience, I know how to recognize and search for quality information.
+                                                My goal is not just to sell you a website or optimize it with SEO. Instead, my role is to help you learn how to build your online presence and be aware of what it involves, in terms of performance, reputation and data protection. 
+                </p>
+              </div>
+
               <div className={styles.section}>
                 <h2 className={styles.heading}>I. Meeting</h2>
                 <p className={styles.paragraph}>We explore the website's objectives, requirements and its target audience. 
@@ -26,7 +33,7 @@
               
               <div className={styles.section}>
                   <h2 className={styles.heading}>III. SEO Audit & Research</h2>
-                  <p className={styles.paragraph}>I'll conduct in-depth keyword research and competitor analysis to understand your website's current SEO standing and identify areas for improvement. Our comprehensive SEO audit will provide valuable insights to optimize your website for better visibility and ranking on search engines.
+                  <p className={styles.paragraph}>I'll conduct in-depth keyword research and competitor analysis to understand your website's current SEO standing and identify areas for improvement.
                   </p>
               </div>
 
@@ -46,12 +53,16 @@
                 <div className={styles.section}>
                   <h2 className={styles.heading}>VI. Develop & Launch</h2>
                   <p className={styles.paragraph}>I'll develop your website. Google Analytics will be installed, SEO will be optimized, 
-                    and I'll provide the necessary documentation for you to learn and a final SEO report, including all actions taken and the current ranking status of your website.
-                    <br/>
-                    After a few walkthroughs, you'll be ready to go.
+                    and I'll provide the necessary documentation for you to learn and a final SEO report, including all actions taken and the current ranking status of your website. After a few walkthroughs, you'll be ready to go.
+
                   </p>
                 </div>
-                <button onClick={() => window.location.href = "https://plumsail-8tvh9dr5k4qe.plumsail.io/1aca2600-29ce-4e33-a521-eae0983600bc/5ce2edc6-e67a-4a7e-ba74-2a0186da16d2"} className={styles.techButton}>Get In Touch!</button>
+                <button
+                  onClick={() => window.open("https://plumsail-8tvh9dr5k4qe.plumsail.io/1aca2600-29ce-4e33-a521-eae0983600bc/5ce2edc6-e67a-4a7e-ba74-2a0186da16d2")}
+                  className={styles.sharedButton}
+                >
+                  Get In Touch!
+                </button>
           </div>
       </Layout>
     );

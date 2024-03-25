@@ -7,7 +7,7 @@ export default function Layout ({ children }: { children: React.ReactNode }) {
         <Head>
                 <meta charSet="UTF-8"/>             
                 <link rel="icon" href="./favicon.ico" />   
-                <meta http-Equiv="Cache-control" max-age="31536000" content="public"></meta>
+                <meta httpEquiv="Cache-control" max-age="31536000" content="public"></meta>
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <link rel="profile" href="https://gmpg.org/xfn/11"></link>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
