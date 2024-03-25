@@ -11,9 +11,10 @@
         </div>
             <div className={styles.content}>
             <div className={styles.section}>
-                <h2 className={styles.heading}>I am not an expert</h2>
-                <p className={styles.paragraph}>I have an incredible hunger for progress and with 13 years of internet experience, I know how to recognize and search for quality information.
-                                                My goal is not just to sell you a website or optimize it with SEO. Instead, my role is to help you learn how to build your online presence and be aware of what it involves, in terms of performance, reputation and data protection. 
+                <h2 className={styles.heading}>I won't give you the fish, I'll create your tools and teach you how to fish.</h2>
+                <p className={styles.paragraph}>
+                My intention is not just to sell you a website or optimize it with SEO. Instead, my purpose is to help you aware how to build your online presence and what it involves, in terms of performance, reputation and data protection.
+                Do you want a personalized and competitive website? And learn in an peaceful way?
                 </p>
               </div>
 
@@ -25,9 +26,10 @@
               </div>
 
               <div className={styles.section}>
-                <h2 className={styles.heading}>II. Wireframing</h2>
+                <h2 className={styles.heading}>II. Wireframing & Figma design</h2>
                 <p className={styles.paragraph}>Your user's needs are then translated into a sitemap outlining all your pages and their underlying structure. 
-                  Once approved, we provide initial wireframes of the site, which are then refined through iterations to confirm the site's layout.
+                  Once approved, we provide initial wireframes of the site, which are then refined through iterations to confirm the site's layout. 
+                  For the design. We'll discuss the look and feel of the site, and how we can catch your web visitors. Based on this conversation, I'll design Figma mockups of your site's pages for your review before finalizing them. 
                 </p>
               </div>
               
@@ -42,16 +44,9 @@
                   <p className={styles.paragraph}>I'll focus on optimizing individual pages of your website to enhance their relevance and visibility for target keywords. This includes optimizing meta tags, headings, content, and internal linking structure to improve search engine rankings and drive organic traffic.
                   </p>
               </div>
-
-                <div className={styles.section}>
-                  <h2 className={styles.heading}>V. Figma design</h2>
-                  <p className={styles.paragraph}>We'll discuss the look and feel of the site, and how we can catch your web visitors. 
-                    Based on this conversation, I'll design Figma mockups of your site's pages for your review before finalizing them. 
-                  </p>
-                </div>
               
                 <div className={styles.section}>
-                  <h2 className={styles.heading}>VI. Develop & Launch</h2>
+                  <h2 className={styles.heading}>V. Develop & Launch</h2>
                   <p className={styles.paragraph}>I'll develop your website. Google Analytics will be installed, SEO will be optimized, 
                     and I'll provide the necessary documentation for you to learn and a final SEO report, including all actions taken and the current ranking status of your website. After a few walkthroughs, you'll be ready to go.
 

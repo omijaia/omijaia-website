@@ -15,8 +15,8 @@ const Nav = () => {
           </Link>
         
         <div className={nav.navLinks}>
-          <Link className={nav.navLink} href="/visual-identity">
-            Visual Identity
+          <Link className={nav.navLink} href="/brand-identity">
+            Brand Identity
           </Link>
           <Link className={nav.navLink} href="/workflow">
             Workflow

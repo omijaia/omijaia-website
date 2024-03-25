@@ -51,10 +51,12 @@ const About = () => {
               <br/>
               <br/>
             </p>
+            <div className={styles.aboutButtons}>
             <button className={styles.techButton} onClick={downloadCV}>Download CV</button>
             <p className={styles.emailLink} onClick={() => copyToClipboard('hi@mijaia.com')} style={{ cursor: 'pointer' }}>
               hi@mijaia.com
             </p>
+            </div>
           </div>
         </div>
       </div>

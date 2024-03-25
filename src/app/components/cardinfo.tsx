@@ -32,12 +32,12 @@ const cardinfo = () => {
               233377610
             </div>
             <div className={card.textcard}>
-              <small className={card.textbase}>Visual</small>
+              <small className={card.textbase}>Brand</small>
               <h5 className={card.titlecard}>Identity</h5>
             </div>
           </div>
           <div className={card.content}>
-            <small className={card.textbase}>Logos, banners and assets for your brand</small>
+            <small className={card.textbase}>Creativity for your brand</small>
           </div>
         </div>
       </Link>
@@ -71,7 +71,7 @@ const cardinfo = () => {
             </div>
           </div>
           <div className={card.content}>
-            <small className={card.textbase}>Skills and Hobbies</small>
+            <small className={card.textbase}>Background</small>
           </div>
         </div>
       </Link>

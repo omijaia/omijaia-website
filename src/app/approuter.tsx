@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Index from '../pages/index';
 import Workflow from '../pages/workflow';
-import VisualIdentity from '../pages/visual-identity';
+import BrandIdentity from '../pages/brand-identity';
 import Works from '../pages/works';
 import About from '../pages/about';
 {/*import Resources from '../pages/resources';*/}
@@ -16,7 +16,7 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/workflow" element={<Workflow />} />
-        <Route path="/visual-identity" element={<VisualIdentity />} />
+        <Route path="/brand-identity" element={<BrandIdentity />} />
         <Route path="/works" element={<Works />} />
         <Route path="/about" element={<About />} />
         {/*<Route path="/reources" element={<Resources />} />*/}

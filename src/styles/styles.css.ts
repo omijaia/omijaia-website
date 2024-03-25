@@ -100,11 +100,11 @@ export const button = style({
 
 
 export const buttonText = style({
-  marginRight: '10px',
   marginTop: '15px',
+  maxWidth: '50%',
+  marginRight: '10px',
   fontSize: '13px',
   fontStyle: 'italic',
-
   '@media': {
     '(min-width: 768px)': {
         marginTop: '17px',
@@ -318,7 +318,6 @@ export const profileImage = style({
 });
 
 export const textAbout = style({
-  textAlign: 'center', 
   marginLeft: '1rem',
 
   '@media': {
@@ -340,6 +339,12 @@ export const emailLink = style({
     fontWeight: 'bold',
     textDecoration: 'underline', 
   },
+});
+
+export const aboutButtons = style ({
+
+  textAlign: 'center',
+
 });
 
 

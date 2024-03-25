@@ -20,7 +20,7 @@ const footer = () => {
             <br />So what's your favorite? Mine is Michaelangelo.</div>
         <div className={styles.footerMenu}>
           <ul className={styles.navLinks}>
-            <li className={styles.navLink}><Link href="/visual-identity">Visual Identity</Link></li>
+            <li className={styles.navLink}><Link href="/brand-identity">Brand Identity</Link></li>
             <li className={styles.navLink}><Link href="/workflow">Workflow</Link></li>
             <li className={styles.navLink}><Link href="/works">Works</Link></li>
            {/* <li className={styles.navLink}><Link href="/resources">Resources</Link></li> */}
