@@ -1,4 +1,4 @@
-import { style } from '@vanilla-extract/css';
+import { keyframes, style } from '@vanilla-extract/css';
 
 const mobileFontSize = '39px';
 const desktopFontSize = '100px';
@@ -6,11 +6,22 @@ const mobileButtonSize = '45px';
 
 //______________________NAVBAR
 
-  export const logo = style({
-    justifyContent: 'flex-start',
-    marginRight: '3vmin',
-    marginBottom: '.5rem',
-  });
+const spin = keyframes({
+  '0%': {
+    transform: 'rotate(0deg)',
+  },
+  '100%': {
+    transform: 'rotate(1070deg)',
+  },
+});
+
+export const logo = style({
+  justifyContent: 'flex-start',
+  marginRight: '3vmin',
+  marginBottom: '.5rem',
+  animation: `${spin} 5s linear infinte`, 
+});
+
 
   export const navLinks = style({
     display: 'flex',

@@ -37,15 +37,17 @@ const About = () => {
               I'm a 25-year-old web developer with over 3 years of experience and technician specializing in programming and my commitment is to deliver a website that meets the client's needs and expectations and to continous learning keeps me abreast of the latest trends.
               <br/>
               <br/>
-              Since I was 19, I've been exploring various fields such as graphic design, social media management, hacking, and pure mathematics.    
+              I do not distinguish between working as an entrepreneur or for a company, only in providing value to whoever takes advantage of the fruits of my labor. I recognize that my instinct is more entrepreneurial.
+              <br/>
+              <br/>
+              Since I was 19, I've been exploring various fields such as dj, computer science, graphic design, social media management, hacking, and mathematics.   
               <br/>
               <br/>
               Nowadays my tastes are changing as new ways of optimizing my work appear. Resolving more in software development as a livelihood, but trying to give main focus to pentesting and SEO. 
               I don't pretend to be a generalist, but to have enough knowledge in business, focused on the technical aspect and and know how to prevent threats.
               <br/>
               <br/>
-              I really like science and nature. I consider myself a nerd with style. If I could live isolated in a forest I would.
-              Music is one of my favorite hobbies, literature of all kinds and keeping my mind and body healthy.
+              I like anchovy pizza, one piece, horror literature, and discovering musical artists, I'm open to most musical genres and I mix music in my free time.
               <br/>
               <br/>
             </p>
