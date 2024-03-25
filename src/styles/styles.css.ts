@@ -19,7 +19,7 @@ export const logo = style({
   justifyContent: 'flex-start',
   marginRight: '3vmin',
   marginBottom: '.5rem',
-  animation: `${spin} 5s linear infinte`, 
+  animation: `${spin} 5s linear infinite`, 
 });
 
 
