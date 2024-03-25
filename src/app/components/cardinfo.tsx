@@ -12,7 +12,7 @@ const cardinfo = () => {
       <div className={`${card.card} ${card.cardHover}`}>
         <div className={card.header}>
           <div className={card.id}>
-            161803398
+            112358132
           </div>
           <div className={card.textcard}>
             <small className={card.textbase}>Development</small>
@@ -29,7 +29,7 @@ const cardinfo = () => {
         <div className={`${card.card} ${card.cardHover}`}>
           <div className={card.header}>
             <div className={card.id}>
-              198013008
+              233377610
             </div>
             <div className={card.textcard}>
               <small className={card.textbase}>Visual</small>
@@ -46,7 +46,7 @@ const cardinfo = () => {
       <div className={`${card.card} ${card.cardHover}`}>
         <div className={card.header}>
           <div className={card.id}>
-           618033988
+            987159725
           </div>
           <div className={card.textcard}>
             <small className={card.textbase}>Portfolio</small>
@@ -63,7 +63,7 @@ const cardinfo = () => {
         <div className={`${card.card} ${card.cardHover}`}>
           <div className={card.header}>
             <div className={card.id}>
-              198013008
+              844181675
             </div>
             <div className={card.textcard}>
               <small className={card.textbase}>About</small>
@@ -81,7 +81,7 @@ const cardinfo = () => {
       <Link href="/posts/websites-goals">
         <div className={card.headerblog}>
           <div className={card.idblog}>
-            198013008
+            109461771
           </div>
           <div className={card.textcard}>
             <small className={card.textbaseblog}>Websites Goals</small>
