@@ -1,16 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
 import Layout from '../app/layout';
-import { saveAs } from "file-saver";
+import { saveAs } from 'file-saver';
+import axios from 'axios';
 import * as styles from '../styles/styles.css'
 import Profile from '../../public/assets/images/miguel.png'
 
-const Information = () => {
+const About = () => {
 
-  const handleDownload = () => {
-    const fileUrl = "/CV.pdf";
-    saveAs(fileUrl, "Miguel-CV.pdf");
-  };
+    const downloadCV = async () => {
+      try {
+        const response = await axios.get('/cv.pdf', {
+          responseType: 'blob', 
+        });
+  
+        saveAs(response.data, 'CV_Miguel_Munoz.pdf');
+      } catch (error) {
+        console.error('Failed to Download CV:', error);
+      }
+    };
+
+    const copyToClipboard = (text: string) => {
+      navigator.clipboard.writeText(text);
+      alert('Email copied!');
+    };
 
   return (
     <Layout>
@@ -36,6 +49,10 @@ const Information = () => {
               <br/>
               <br/>
             </p>
+            <button className={styles.techButton} onClick={downloadCV}>Download CV</button>
+            <p className={styles.emailLink} onClick={() => copyToClipboard('hi@mijaia.com')} style={{ cursor: 'pointer' }}>
+              hi@mijaia.com
+            </p>
           </div>
         </div>
       </div>
@@ -43,5 +60,4 @@ const Information = () => {
   );
 };
 
-
-export default Information;
+export default About;

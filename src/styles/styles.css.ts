@@ -174,6 +174,27 @@ export const profile = style({
   height: 'auto',
 });
 
+//______________________VISUAL IDENTIY
+export const logoContainer = style({
+  display: 'flex',
+  flexWrap: 'wrap',
+  gap: '20px',
+});
+
+export const logos = style({
+  position: 'relative',
+  width: '100px',
+  height: '100px', 
+});
+
+export const logoImage = style({
+  width: '100%',
+  height: '100%',
+  objectFit: 'contain',
+  transition: 'transform 0.3s ease-in-out',
+});
+
+
 //______________________WORKS
 
 export const link = style({
@@ -279,6 +300,21 @@ export const textAbout = style({
     },
   },
 });
+
+export const emailLink = style({
+  cursor: 'pointer', 
+  transition: 'font-style 0.2s', 
+
+  ':hover': {
+    textDecoration: 'underline', 
+  },
+
+  ':active': {
+    fontWeight: 'bold',
+    textDecoration: 'underline', 
+  },
+});
+
 
 
 //______________________FOOTER

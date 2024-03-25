@@ -17,10 +17,10 @@ const Works = () => {
 
           <div className={styles.section}>
             <div className={styles.workImage}>
-                <Image src={MasterPieceOf} alt="Master Piece Of" className={styles.image} />
+                <Image src={MasterPieceOf} alt="The logo of Obra Maestra no? It's an AI model from Replicant that refine your sketch into an image" className={styles.image} />
               </div>
               <div className={styles.textContainer}>
-                <h2 className={styles.heading}>Master Piece Of</h2>
+                <h2 className={styles.heading}>Obra Maestra no?</h2>
                 <div className={styles.buttonContainer}>
                   <button className={styles.techButton}>NextJS</button>
                   <button className={styles.techButton}>Tailwind CSS</button>
@@ -37,7 +37,7 @@ const Works = () => {
 
           <div className={styles.section}>
               <div className={styles.workImage}>
-                <Image src={Tremunda} alt="Tremunda" className={styles.image} />
+                <Image src={Tremunda} alt="Tremunda's personal brand logo and website" className={styles.image} />
               </div>
               <div className={styles.textContainer}>
                 <h2 className={styles.heading}>Tremunda</h2>
@@ -52,7 +52,7 @@ const Works = () => {
 
             <div className={styles.section}>
               <div className={styles.workImage}>
-                <Image src={VosEnglish} alt="VosEnglish" className={styles.image} />
+                <Image src={VosEnglish} alt="The logo of the free English learning space VosEnglish and paid ZOOM classes" className={styles.image} />
               </div>
               <div className={styles.textContainer}>
                 <h2 className={styles.heading}>Vos English</h2>
