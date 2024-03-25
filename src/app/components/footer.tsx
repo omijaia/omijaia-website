@@ -32,7 +32,7 @@ const footer = () => {
             </li>
 
             <li>
-            <a href="https://instagram.com/omijaia" target="_blank" rel="noopener">
+            <a href="https://instagram.com/omijaia" target="_blank"  rel="noopener" >
               <AiOutlineInstagram className={styles.footerIcons} />
             </a>
             </li>

@@ -27,7 +27,7 @@ const Information = () => {
               <br/>
               <br/>
               I really like science and nature. I consider myself a nerd with style. If I could live isolated in a forest I would.
-              Music is one of my favorite hobbies, literature of all kinds and keeping my mind and body healthy. I practice saxophone and piano.
+              Music is one of my favorite hobbies, literature of all kinds and keeping my mind and body healthy.
               <br/>
               <br/>
 

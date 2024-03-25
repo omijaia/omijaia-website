@@ -69,6 +69,7 @@ export const button = style({
   transition: 'box-shadow 0.1s, transform 0.1s, background-color 0.3s',
   textDecoration: 'none',
   userSelect: 'none',
+  animation: 'changeGradient 5s linear infinite',
 
   ':active': {
     boxShadow: '#422800 2px 2px 0 0',
@@ -84,6 +85,7 @@ export const button = style({
     },
   },
 });
+
 
 export const buttonText = style({
   marginRight: '10px',
@@ -314,7 +316,6 @@ export const footerText = style({
 
 });
 
-
 export const footerRights = style({
     width: '100%',
     paddingLeft: '1rem',
@@ -322,7 +323,7 @@ export const footerRights = style({
     paddingBottom: '.625rem',
     fontSize: '.6875rem',
     lineHeight: '1.05rem',
-    color: '#807f7b',
+    color: '#66645e',
     justifyContent: 'center',
     display: 'flex',
 });

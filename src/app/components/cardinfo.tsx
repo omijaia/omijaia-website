@@ -24,7 +24,24 @@ const cardinfo = () => {
         </div>
       </div>
       </Link>
-      
+
+      <Link href="/information">
+        <div className={`${card.card} ${card.cardHover}`}>
+          <div className={card.header}>
+            <div className={card.id}>
+              198013008
+            </div>
+            <div className={card.textcard}>
+              <small className={card.textbase}>Visual</small>
+              <h5 className={card.titlecard}>Identity</h5>
+            </div>
+          </div>
+          <div className={card.content}>
+            <small className={card.textbase}>Logo, Banner and Assets</small>
+          </div>
+        </div>
+      </Link>
+
       <Link href="/works">
       <div className={`${card.card} ${card.cardHover}`}>
         <div className={card.header}>
@@ -49,8 +66,8 @@ const cardinfo = () => {
               198013008
             </div>
             <div className={card.textcard}>
-              <small className={card.textbase}>Developer</small>
-              <h5 className={card.titlecard}>Information</h5>
+              <small className={card.textbase}>About</small>
+              <h5 className={card.titlecard}>Miguel</h5>
             </div>
           </div>
           <div className={card.content}>
